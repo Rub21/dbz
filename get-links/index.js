@@ -24,16 +24,31 @@ steps = [
     // //Step 3
     function () {
         var result = page.evaluate(function () {
-            var h1 = document.querySelectorAll("div.gin-mirrors > a")[0] ? document.querySelectorAll("div.gin-mirrors > a")[0].outerHTML : '';
-            var h2 = document.querySelectorAll("div.gin-mirrors > a")[1] ? document.querySelectorAll("div.gin-mirrors > a")[1].outerHTML : '';
-            var h3 = document.querySelectorAll("div.gin-mirrors > a")[2] ? document.querySelectorAll("div.gin-mirrors > a")[2].outerHTML : '';
-            var h4 = document.querySelectorAll("div.gin-mirrors > a")[2] ? document.querySelectorAll("div.gin-mirrors > a")[3].outerHTML : '';
-            var h5 = document.querySelectorAll("div.gin-mirrors > a")[4] ? document.querySelectorAll("div.gin-mirrors > a")[4].outerHTML : '';
-            var h6 = document.querySelectorAll("div.gin-mirrors > a")[5] ? document.querySelectorAll("div.gin-mirrors > a")[5].outerHTML : '';
-            var h7 = document.querySelectorAll("div.gin-mirrors > a")[6] ? document.querySelectorAll("div.gin-mirrors > a")[6].outerHTML : '';
-            var h8 = document.querySelectorAll("div.gin-mirrors > a")[7] ? document.querySelectorAll("div.gin-mirrors > a")[7].outerHTML : '';
-            var h9 = document.querySelectorAll("div.gin-mirrors > a")[8] ? document.querySelectorAll("div.gin-mirrors > a")[8].outerHTML : '';
-            var h10 = document.querySelectorAll("div.gin-mirrors > a")[9] ? document.querySelectorAll("div.gin-mirrors > a")[9].outerHTML : '';
+            //DBZ
+            // var h1 = document.querySelectorAll("div.gin-mirrors > a")[0] ? document.querySelectorAll("div.gin-mirrors > a")[0].outerHTML : '';
+            // var h2 = document.querySelectorAll("div.gin-mirrors > a")[1] ? document.querySelectorAll("div.gin-mirrors > a")[1].outerHTML : '';
+            // var h3 = document.querySelectorAll("div.gin-mirrors > a")[2] ? document.querySelectorAll("div.gin-mirrors > a")[2].outerHTML : '';
+            // var h4 = document.querySelectorAll("div.gin-mirrors > a")[2] ? document.querySelectorAll("div.gin-mirrors > a")[3].outerHTML : '';
+            // var h5 = document.querySelectorAll("div.gin-mirrors > a")[4] ? document.querySelectorAll("div.gin-mirrors > a")[4].outerHTML : '';
+            // var h6 = document.querySelectorAll("div.gin-mirrors > a")[5] ? document.querySelectorAll("div.gin-mirrors > a")[5].outerHTML : '';
+            // var h7 = document.querySelectorAll("div.gin-mirrors > a")[6] ? document.querySelectorAll("div.gin-mirrors > a")[6].outerHTML : '';
+            // var h8 = document.querySelectorAll("div.gin-mirrors > a")[7] ? document.querySelectorAll("div.gin-mirrors > a")[7].outerHTML : '';
+            // var h9 = document.querySelectorAll("div.gin-mirrors > a")[8] ? document.querySelectorAll("div.gin-mirrors > a")[8].outerHTML : '';
+            // var h10 = document.querySelectorAll("div.gin-mirrors > a")[9] ? document.querySelectorAll("div.gin-mirrors > a")[9].outerHTML : '';
+            
+            
+            var h1 = document.querySelectorAll("div.js-ap-video")[0] ? document.querySelectorAll("div.js-ap-video")[0].outerHTML : '';
+            var h2 = document.querySelectorAll("div.js-ap-video")[1] ? document.querySelectorAll("div.js-ap-video")[1].outerHTML : '';
+            var h3 = document.querySelectorAll("div.js-ap-video")[2] ? document.querySelectorAll("div.js-ap-video")[2].outerHTML : '';
+            var h4 = document.querySelectorAll("div.js-ap-video")[2] ? document.querySelectorAll("div.js-ap-video")[3].outerHTML : '';
+            var h5 = document.querySelectorAll("div.js-ap-video")[4] ? document.querySelectorAll("div.js-ap-video")[4].outerHTML : '';
+            var h6 = document.querySelectorAll("div.js-ap-video")[5] ? document.querySelectorAll("div.js-ap-video")[5].outerHTML : '';
+            var h7 = document.querySelectorAll("div.js-ap-video")[6] ? document.querySelectorAll("div.js-ap-video")[6].outerHTML : '';
+            var h8 = document.querySelectorAll("div.js-ap-video")[7] ? document.querySelectorAll("div.js-ap-video")[7].outerHTML : '';
+            var h9 = document.querySelectorAll("div.js-ap-video")[8] ? document.querySelectorAll("div.js-ap-video")[8].outerHTML : '';
+            var h10 = document.querySelectorAll("div.js-ap-video")[9] ? document.querySelectorAll("div.js-ap-video")[9].outerHTML : '';
+            
+            
             return h1 + h2 + h3 + h4 + h5 + h6 + h7 + h8 + h9 + h10;
         });
         fs.write('index.html', result, 'w');
