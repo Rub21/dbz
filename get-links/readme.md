@@ -1,5 +1,5 @@
 # Get the links
 
 ```
-./start.sh
+./start.sh dbs.json
 ```

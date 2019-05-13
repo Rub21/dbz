@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="gr__v4-alpha_getbootstrap_com">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>dbz</title>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  </link>
+</head>
+
+<body data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+  <div class="container-fluid">
+    <div class="row">
+      <main class="col-sm-12">
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>dbz</th>
+                <th>Title</th>
+
+                <th>links</th>
+              </tr>
+            </thead>
+            <tbody id="links">
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="links.js"></script>
+  <script src="names.js"></script>
+  <script>
+    for (let d = 0; d < links.length; d++) {
+      hrefs = '';
+      for (var i = 0; i < links[i].links.length; i++) {
+        const l = links[i];
+        hrefs = hrefs + '<a  class="btn btn-info" href=' + l.links[i] + '>**------' + (i + 1) + '----**</a>';
+      }
+      $('#links').append(
+        '<tr><td>' + links[d].cap + '</td><td>' + names[d + 1] + '</td><td>' + hrefs + '</td> </tr>');
+    }
+  </script>
+</body>
+
+</html>

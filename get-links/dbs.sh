@@ -8,3 +8,5 @@ do
     echo "{'cap':$i,'links':$links}," >> $1
 done
 echo "]" >> $1
+
+cp $1 ../dbs/links.js
