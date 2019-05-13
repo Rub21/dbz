@@ -46,7 +46,7 @@
   <script>
     for (let d = 0; d < links.length; d++) {
       hrefs = '';
-      for (var i = 0; i < links[i].links.length; i++) {
+      for (var i = 0; i < links[d].links.length; i++) {
         const l = links[i];
         hrefs = hrefs + '<a  class="btn btn-info" href=' + l.links[i] + '>**------' + (i + 1) + '----**</a>';
       }
