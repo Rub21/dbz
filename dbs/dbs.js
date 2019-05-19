@@ -1,4 +1,4 @@
-var links=[
+var caps=[
     {'cap':1,'links':[]},
     {'cap':2,'links':["http://www.videonest.net/embed-5x8ooel5efu2.html","http://www.videonest.net/embed-dcktg5evz1w5.html","http://www.mp4upload.com/embed-dz6g0nsrbita.html","http://www.mp4upload.com/embed-p9jrqnh1vw45.html","http://www.yourupload.com/embed/5BVwl57t5GRl","http://www.yourupload.com/embed/nNFq8P8JmAfl"]},
     {'cap':3,'links':["http://www.mp4upload.com/embed-2vos3yi6uxy2.html","http://www.mp4upload.com/embed-86y8or1r7vr9.html","http://www.yourupload.com/embed/UO5074tg3L7N","http://www.yourupload.com/embed/d0d368PN0CSq","http://www.videonest.net/embed-ltov2cspkos6.html","http://www.videonest.net/embed-jnsh9nopj91w.html"]},
